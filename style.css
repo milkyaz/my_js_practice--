@@ -1,0 +1,29 @@
+body {
+  margin: 300px auto 0;
+  width: 450px;
+  font-size: 25px;
+}
+button {
+  width: 200px;
+  padding: 25px;
+  font-size: 20px;
+}
+p {
+  padding-left: 25px;
+}
+
+.out-1 {
+  border: 1px solid black;
+  height: 50px;
+  margin-bottom: 60px;
+}
+.out-2 {
+  border: 1px solid black;
+  height: 50px;
+  margin-bottom: 60px;
+}
+.out-3 {
+  border: 1px solid black;
+  height: 50px;
+  margin-bottom: 60px;
+}
