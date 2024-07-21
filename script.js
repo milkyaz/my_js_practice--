@@ -2139,28 +2139,34 @@ firstToLast("ababc","d") should return -1 */
 // console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")); // "42 -9"
 // console.log(highAndLow("1 2 3")); // "3 1"
 
-function descendingOrder(n) {
-  let arr = [n];
-  let arrStr = arr.toString();
-  let newArrstr = arrStr.split("");
-  let arrNum = [];
-  for (let i = 0; i < newArrstr.length; i++) {
-    arrNum.push(+newArrstr[i]);
+function countRedBeads(n) {
+  for (let i = 333; i <= 1000; i += 2) {
+    console.log(i);
   }
-  return arrNum.reverse();
 }
 
-console.log(descendingOrder(0)); // 0)
-console.log(descendingOrder(1)); // 1)
-console.log(descendingOrder(111)); // 111)
-console.log(descendingOrder(15)); // 51)
-console.log(descendingOrder(1021)); // 2110)
-console.log(descendingOrder(123456789)); // 987654321)
+console.log(countRedBeads(0)); //0
+console.log(countRedBeads(1)); //0
+console.log(countRedBeads(3)); //4
+console.log(countRedBeads(5)); //8)
 
+/**Между каждыми двумя синими бусинами помещаются по две красные бусины. Всего получается N синих бусин.  */
+//Пвсевдокод
 /**
- Создать массив из чисел 
- Обратиться к каждому числу 
- Нужно конвертировать в srting, а после раскидать так, чтобы каждое число было элементом массива
- Сортировать по в обратном порядке 
- Если в обратном порядке не получилось наибольшее число, то поставить числа так, чтобы получилось наибольшее число 
+ 
+0110110
+3 = 4 красных
+
+0110110110
+4 = 6 красных
+
+0110110110110
+5 = 8 красных
+
+0 11 0 11 0 11 0 11 0 11 0
+6 = 10 красных
+
+0 11 011 011 011 011 0 110 
+7 = 12 
+Если синих шариков меньше 2, верните значение 0.
  */
